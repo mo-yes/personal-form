@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Data Form</title>
+</head>
+
+<body style="font-family: sans-serif;">
+
+  <!-- Header section for page title -->
+  <header style="text-align: center; background-color: #ddd; padding: 10px;">
+    <h1>Personal Data</h1>
+  </header>
+
+  <!-- Main section that holds all the page content -->
+  <main style="margin: 20px;">
+
+    <!-- Personal Data Form Section -->
+    <section>
+      <form>
+
+        <!-- Grouping related inputs using fieldset -->
+        <fieldset style="background-color: #f3f3f3;">
+          <legend style="background-color: rgb(164, 175, 175); padding: 3px;">Personal Information</legend>
+
+          <!-- Article for name inputs -->
+          <article>
+            <h3>Your Name</h3>
+            <table>
+              <tr>
+                <td><label for="fname">First Name</label></td>
+                <td>:</td>
+                <td><input type="text" id="fname" name="fname" placeholder="Ex. Mohamed" required></td>
+              </tr>
+              <tr>
+                <td><label for="sname">Second Name</label></td>
+                <td>:</td>
+                <td><input type="text" id="sname" name="sname" placeholder="Ex. Yasser" required></td>
+              </tr>
+            </table>
+          </article>
+
+          <br>
+
+          <!-- Contact Info Section -->
+          <section>
+            <h3>Contact Information</h3>
+            <table>
+              <tr>
+                <td><label for="phone">Phone</label></td>
+                <td>:</td>
+                <td><input type="tel" id="phone" name="phone" placeholder="Ex. +20 01181266457"></td>
+              </tr>
+              <tr>
+                <td><label for="password">Password</label></td>
+                <td>:</td>
+                <td><input type="password" id="password" name="password" placeholder="********"></td>
+              </tr>
+              <tr>
+                <td><label for="rePassword">Re-Password</label></td>
+                <td>:</td>
+                <td><input type="password" id="rePassword" name="rePassword" placeholder="********"></td>
+              </tr>
+            </table>
+          </section>
+
+          <br>
+
+          <!-- Gender Section -->
+          <section>
+            <h3>Gender</h3>
+            <label><input type="radio" name="gender" value="female" required> Female</label>
+            <label><input type="radio" name="gender" value="male" required> Male</label>
+          </section>
+
+          <br>
+
+          <!-- University Selection -->
+          <section>
+            <h3>University</h3>
+            <select name="university" required>
+              <option value="" disabled selected>Choose University</option>
+              <optgroup label="Egypt">
+                <option value="cairo">Cairo</option>
+                <option value="ain-shams">Ain Shams</option>
+                <option value="zagazig">Zagazig</option>
+              </optgroup>
+              <optgroup label="Outside Egypt">
+                <option value="auc">AUC</option>
+                <option value="british">British University</option>
+              </optgroup>
+            </select>
+          </section>
+
+          <br>
+
+          <!-- Student Status Section -->
+          <section>
+            <h3>Status</h3>
+            <label><input type="checkbox" name="status" value="student"> Student</label>
+            <label><input type="checkbox" name="status" value="graduated"> Graduated</label>
+          </section>
+
+          <br>
+
+          <!-- Footer section -->
+          <footer>
+            <button type="submit" style="padding: 6px 10px;">Send Data</button>
+          </footer>
+
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+</body>
+</html>
