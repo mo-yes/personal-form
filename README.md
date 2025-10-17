@@ -39,7 +39,7 @@ The goal of this task is to:
 ## 🖥️ Live Preview
 *(Add your GitHub Pages link here after deployment)*  
 Example:  
-👉 [View Live Demo](https://github.com/mo-yes/personal-form/)
+👉 [View Live Demo](https://mo-yes.github.io/personal-form/)
 
 ---
 
